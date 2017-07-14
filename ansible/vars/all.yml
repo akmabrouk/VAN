@@ -1,0 +1,4 @@
+---
+nginx:
+    docroot: /vagrant
+    servername: dev

@@ -1,0 +1,27 @@
+---
+- hosts: loadbalancer
+  become: true
+  vars_files:
+    - vars/all.yml
+  roles:
+    - server
+    - nginx_proxy
+    - test  
+
+- hosts: application_1
+  become: true
+  vars_files:
+    - vars/all.yml
+  roles:
+    - server
+    - nginx
+    - php
+
+- hosts: application_2
+  become: true
+  vars_files:
+    - vars/all.yml
+  roles:
+    - server
+    - nginx
+    - php
