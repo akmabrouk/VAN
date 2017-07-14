@@ -23,6 +23,9 @@ Runs any configured provisioners against the running Vagrant managed machine.
 Vagrant destroy
 This command stops the running machine Vagrant is managing and destroys all resources that were created during the machine creation process. After running this command, your computer should be left at a clean state, as if you never created the guest machine in the first place.
 ```
+
+Once the machines are up and playbook is fully played, go checkout the URL: http://192.168.88.10.
+
 ## Vagrantfile
 The syntax of the vagrantfile is based on Ruby. It is simple setup for two application servers thats serves the loadbalancer. The application servers can be scaled from two to three simply by changing the values: (1..2).each do |i| into (1..3).each do |i|. 
 
