@@ -117,19 +117,24 @@ These roles are a further level of abstraction that can be useful for organizing
 For this project the roles were created (with tasks, handlers and templates) to serve the loadbalancer and the application servers. 
 
 - Server
+
 Includes update_cache to ensures the indexes are synchronized with the sources list and installation curl, wget and vim for test/troubleshooting purposes.
 
 - Nginx_proxy
+
 Includes installation of Nginx (latest version) and round-robin template. This also include restaring handler for nginx. 
 See more options at [Loadbalancing types with Nginx](http://nginx.org/en/docs/http/load_balancing.html). 
 
 - Nginx
+
 Includes the installation of the latest Nginx and its template for setting up the config with restarting handler for Nginx. 
 
 - Php
+
 Includes the installaton of php php5-fpm, php5-mcrypt, php5-gd and php5-curl and a restarting handler for php5-fpm. 
 
 - Test
+
 Testing connectivity with ports 80 to the loadbalancer and the application servers.  
 
 ## Improvements
