@@ -6,7 +6,6 @@
   roles:
     - server
     - nginx_proxy
-    - test  
 
 - hosts: application_1
   become: true
@@ -25,3 +24,4 @@
     - server
     - nginx
     - php
+    - test  
