@@ -1,24 +1,24 @@
 ---
 - name: Install php5-fpm
   sudo: yes
-  apt: pkg=php5-fpm state=latest
+  apt: name=php5-fpm state=latest
 
 - name: Install php5-mysql
   sudo: yes
-  apt: pkg=php5-mysql state=latest
+  apt: name=php5-mysql state=latest
 
 - name: Install php5-mcrypt
   sudo: yes
-  apt: pkg=php5-mcrypt state=latest
+  apt: name=php5-mcrypt state=latest
 
 - name: Install php5-mcrypt
   sudo: yes
-  apt: pkg=php5-mcrypt state=latest
+  apt: name=php5-mcrypt state=latest
 
 - name: Install php5-gd
   sudo: yes
-  apt: pkg=php5-gd state=latest
+  apt: name=php5-gd state=latest
 
 - name: Install php5-curl
   sudo: yes
-  apt: pkg=php5-curl state=latest
+  apt: name=php5-curl state=latest
