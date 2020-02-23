@@ -1,7 +1,8 @@
 ---
+
 - name: Install Nginx
   sudo: yes
-  apt: pkg=nginx state=latest
+  apt: name=nginx state=latest
 
 - name: Change default nginx site
   sudo: yes
