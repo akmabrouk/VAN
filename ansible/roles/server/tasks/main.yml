@@ -1,11 +1,12 @@
 ---
+
 - name: Update apt
   sudo: yes
   apt: update_cache=yes
 
 - name: Install System Packages
   sudo: yes
-  apt: pkg={{ item }} state=latest
+  apt: name={{ item }} state=latest
   with_items:
     - curl
     - wget
